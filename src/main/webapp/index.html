@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css"
+	href="/webjars/bootstrap/3.0.3/css/bootstrap.min.css" />
+</head>
+<body>
+	<script type="text/javascript"
+		src="/webjars/jquery/2.0.3/jquery.min.js"></script>
+	<div class="jumbotron">
+		<form id="loginform" name="loginform"
+			action="/mms/j_spring_security_check" method="post">
+			<table id="ver-zebra" width="100%">
+				<colgroup>
+					<col class="vzebra-odd" />
+					<col class="vzebra-even" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col" colspan="2" align="center" id="zebra-adventure">Please
+							Log In to Your Account</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Login</td>
+						<td><input id="j_username" name="j_username" size="20"
+							maxlength="50" type="text" /></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input id="j_password" name="j_password" size="20"
+							maxlength="50" type="password" /></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td align="center" colspan="2"><input id="login" name="login"
+							type="submit" value="Login" /></td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</div>
+	<script type="text/javascript"
+		src="/webjars/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
